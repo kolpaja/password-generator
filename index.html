@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generate Password</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4e292ec4a8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <main id="container">
-      <h1>Password Generator</h1>
-      <div class="password-field">
-        <span class="password-code">asdfsfgg123A</span>
-        <button type="submit" class="copy-password">copy</button>
+      <h2>Password Generator</h2>
+      <div class="password-field settings">
+        <span class="result">MyP@ssw0rd!</span>
+        <button type="submit" class="copy-password">
+          <i class="fas fa-copy"></i>
+        </button>
       </div>
       <section>
         <div class="settings">
@@ -29,14 +35,14 @@
           <input type="checkbox" name="lowercase" id="lowercase" />
         </div>
         <div class="settings">
-          <label> number letters </label>
-          <input type="checkbox" name="number" id="number" />
-        </div>
-        <div class="settings">
-          <label>Include symbol letters</label>
+          <label>Include Symbol</label>
           <input type="checkbox" name="symbol" id="symbol" />
         </div>
-        <button type="submit">Generate Password</button>
+        <div class="settings">
+          <label> Include Number</label>
+          <input type="checkbox" name="number" id="number" />
+        </div>
+        <button type="submit" id="generate">Generate Password</button>
       </section>
     </main>
     <script src="app.js"></script>
